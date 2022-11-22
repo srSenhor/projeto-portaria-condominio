@@ -13,7 +13,7 @@ CREATE TABLE MoradorPrincipal
     telresidencial VARCHAR(20),
     email VARCHAR(40),
     dataNascimento DATE,
-    whatsapp BOOLEAN,
+    grupoWhatsapp BOOLEAN,
     locatario BOOLEAN
 );
 CREATE TABLE Apartamento 
@@ -71,4 +71,3 @@ CREATE TABLE InfoLocacao
     telefone VARCHAR(20),
     nome_contato VARCHAR(20)    
 );
-#DROP DATABASE bd_condominio;
