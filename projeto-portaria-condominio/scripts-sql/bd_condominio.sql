@@ -4,8 +4,8 @@ USE bd_condominio;
 CREATE TABLE MoradorPrincipal
 (
 	cpf VARCHAR(15) PRIMARY KEY,
-    bloco VARCHAR(2) NOT NULL REFERENCES Apartamento(bloco),
-    numero INT  NOT NULL REFERENCES Apartamento(bloco),
+    bloco VARCHAR(2) NOT NULL,
+    numero INT  NOT NULL,
     rg VARCHAR(12),
     nome VARCHAR(40),
     telcelular VARCHAR(20),
