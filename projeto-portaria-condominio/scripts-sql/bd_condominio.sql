@@ -25,7 +25,7 @@ CREATE TABLE Apartamento
 CREATE TABLE Morador
 (
 	cpf_mp VARCHAR(15) NOT NULL REFERENCES MoradorPrincipal(cpf),
-    idMorador VARCHAR(20) PRIMARY KEY,
+    idMorador INT PRIMARY KEY,
     nome VARCHAR(40),
     parentesco VARCHAR(20),
     dataNascimento DATE
@@ -49,7 +49,7 @@ CREATE TABLE Veiculo
 CREATE TABLE Animal
 (
 	cpf_mp VARCHAR(15) NOT NULL REFERENCES MoradorPrincipal(cpf),
-    idAnimal VARCHAR(9) PRIMARY KEY,
+    idAnimal INT PRIMARY KEY,
     tipo VARCHAR(20),
     raca VARCHAR(20),
     cor VARCHAR(15)    
